@@ -6,12 +6,16 @@ void main() {
   Lup3 l3 = new Lup3();
   Lup4 l4 = new Lup4();
   Lup5 l5 = new Lup5();
+  Lup6 l6 = new Lup6();
+  Lup7 l7 = new Lup7();
 
   l1.lup1();
   l2.lup2();
   l3.lup3();
   l4.lup4();
   l5.lup5();
+  l6.lup6();
+  l7.lup7();
 }
 
 //5,4,3,2,1
@@ -81,6 +85,32 @@ class Lup5 {
           stdout.write('*');
         else
           stdout.write(' ');
+      }
+      print('');
+    }
+  }
+}
+
+class Lup6 {
+  lup6() {
+    for (int i = 1; i <= 5; i++) {
+      for (int j = 1; j <= 9; j++) {
+        if (j >= i && j <= 10 - i)
+          stdout.write("*");
+        else
+          stdout.write(' ');
+      }
+      print('');
+    }
+  }
+}
+
+// fill 5x5 box
+class Lup7 {
+  lup7() {
+    for (int i = 1; i <= 5; i++) {
+      for (int j = 1; j <= 5; j++) {
+        stdout.write("*");
       }
       print('');
     }
